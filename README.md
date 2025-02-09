@@ -24,11 +24,11 @@ See backend/README.md and frontend/README.md for setup instructions
 3. Orders can contain one or multiple items and 1 or multiple quantities of each item
 4. Placing or cancelling orders should be reflected in the UI
 
-# Other Considerations
+# Feedback
 
-Please think through and be able to talk about the following considerations:
+Some troubleshooting with this assessment:
 
-* validating user inputs
-* multi-tenant access
-* extensibility for example, new functions being added
-* testing and reliability
+* Poetry kept erroring out, had to find workthroughs with pipx installing, and poetry itself wouldn't run the uvicorn, but uvicorn itself would run without 'poetry run ...' so probably user error
+* accessing open ai key, despite my dashboard recording 0 usage, kept erroring out on requests and saying I've used up all my free credits. Not certain why that was occurring but couldn't actually 'test' the api, sadly
+* essentially did the mockup for how it would've received the information on the client side, and slotted the imaginary data accordingly. Again, couldn't test for real so not certain how I would've needed to tweak the received data
+* Apologies for its incompletion, it just did not seem to want to work with me.
